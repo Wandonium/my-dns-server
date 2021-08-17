@@ -28,6 +28,7 @@ const proxy = (question, response, cb) => {
 const handleRequest = (req, res) => {
     console.log('request from ', req.address.address, 'for ',
         req.question[0].name);
+    console.log('full request: ', req.address);
     
     let f = [];     // array of callbacks
 
